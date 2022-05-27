@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Task list</title>
+</head>
+<body>
+	<div class="todo">
+		<div class="header">
+			Task list
+		</div>
+		<div class="control">
+			<input type="text" placeholder="Enter text..." class="input_text" id="text_around">
+			<button type="button" class="add">ADD TASK</button>
+			<button class="rem_all">REMOVE ALL</button>
+			<button class="rea_all">READY ALL</button>
+			<select class="todo__options">
+      			<option value="active">Активные</option>
+      			<option value="completed">Завершённые</option>
+    		</select>
+		</div>
+		<div class="todo__items" data-todo-option="active">
+		</div>
+	</div>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+	<script src="ready.js"></script>
+</body>
+</html>
