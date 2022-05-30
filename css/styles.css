@@ -62,6 +62,13 @@ body{
 	border: 0.07em solid #acacac;
 }
 
+.bl{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
 .stask_text{
 	padding: 5px;
 	border: 3px solid #2b2b2b;
