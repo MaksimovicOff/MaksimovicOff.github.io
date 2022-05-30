@@ -9,13 +9,27 @@
 <body>
 	<div class="todo">
 		<div class="header">
-			Task list
+			Task
+			<br>
 		</div>
 		<div class="control">
-			<input type="text" placeholder="Enter text..." class="input_text" id="text_around">
-			<button type="button" class="add">ADD TASK</button>
-			<button class="rem_all">REMOVE ALL</button>
-			<button class="rea_all">READY ALL</button>
+			<input type="text" placeholder="Enter task name" class="input_text" id="text_around">
+		</div>
+		<div class="header">
+			Subtasks 
+			<button class="plus">+</button>
+		</div>
+		<div class="main">
+        <div class="label">
+      <div class="form">
+        
+      </div><br>
+    	<div class="control_buttons">
+    		<button type="button" class="add">SAVE TASK IN LOCALSTORAGE</button>
+    		<button class="create_task">CREATE NEW TASK</button>
+    	</div>
+    	<div class="header">
+			Task list
 			<select class="todo__options">
       			<option value="active">Активные</option>
       			<option value="completed">Завершённые</option>
@@ -27,5 +41,7 @@
 	<script src="jquery-3.6.0.min.js"></script>
 	<script src="script.js"></script>
 	<script src="ready.js"></script>
+	<script src="plus.js"></script>
+  	<script src="delet.js"></script>
 </body>
 </html>
