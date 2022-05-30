@@ -35,11 +35,9 @@ const todo = {
     create(text) {
     return `<div class="todo__item" data-todo-state="active">
         <div class="todo__task">${text}</div>
-        <div class="todo__action todo__action_circle_res" data-todo-action="active"></div>
-        <div class="todo__action todo__action_circle_com" data-todo-action="completed"></div><br>
         <button class="todo__action todo__action_restore" data-todo-action="active">UNREADY</button>
         <button class="todo__action todo__action_complete" data-todo-action="completed">READY</button>
-        <button class="todo__action todo__action_delete" data-todo-action="deleted">DELETE</button>
+        <button class="todo__action todo__action_delete" data-todo-action="deleted">LOAD</button>
         </div>`;
     },
     init() {
