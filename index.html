@@ -13,7 +13,7 @@
 			<br>
 		</div>
 		<div class="control">
-			<input type="text" placeholder="Enter task name" class="input_text" id="text_around">
+			<input type="text" placeholder="Enter task name" class="name">
 		</div>
 		<div class="header">
 			Subtasks 
@@ -21,26 +21,23 @@
 		</div>
 		<div class="main">
         <div class="label">
-      <div class="form">
+      	<div class="form">
         
-      </div><br>
+      	</div><br>
     	<div class="control_buttons">
-    		<button type="button" class="add">SAVE TASK IN LOCALSTORAGE</button>
-    		<button class="create_task">CREATE NEW TASK</button>
+    		<button class="save">SAVE TASK IN LOCALSTORAGE</button>
+    		<button type="button" class="create" onclick="add(event)">CREATE NEW TASK</button>
     	</div>
     	<div class="header">
 			Task list
-			<select class="todo__options">
-      			<option value="active">Активные</option>
-      			<option value="completed">Завершённые</option>
-    		</select>
 		</div>
-		<div class="todo__items" data-todo-option="active">
+		<div class="result">
+    	</div>
+		</div>
 		</div>
 	</div>
 	<script src="jquery-3.6.0.min.js"></script>
 	<script src="script.js"></script>
-	<script src="ready.js"></script>
 	<script src="plus.js"></script>
   	<script src="delet.js"></script>
 </body>
