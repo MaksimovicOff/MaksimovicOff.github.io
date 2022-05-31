@@ -29,12 +29,9 @@ body{
 	font-size: 14px;
 	display: flex;
 	flex-direction: column;
-  /*align-content: center;
-  justify-content: center;
-  align-items: center;*/
 }
 
-.input_text{
+.name{
 	padding: 5px;
 	border: 3px solid #2b2b2b;
 	color: #2b2b2b;
@@ -69,14 +66,14 @@ body{
   align-content: center;
 }
 
-.stask_text{
+.rrr{
 	padding: 5px;
 	border: 3px solid #2b2b2b;
 	color: #2b2b2b;
 	width: 70%;
 }
 
-.stask_time{
+.number{
 	margin: 5px;
 	padding: 5px;
 	border: 3px solid #2b2b2b;
@@ -113,7 +110,7 @@ body{
   align-items: center;
 }
 
-.add{
+.save{
 	width: 100%;
 	padding: 5px;
 	margin: 5px;
@@ -122,12 +119,12 @@ body{
 	border: 3px solid #2b2b2b;
 }
 
-.add:hover{
+.save:hover{
 	transition: 0.4s;
 	background-color: #cacaca;
 }
 
-.create_task{
+.create{
 	width: 100%;
 	padding: 5px;
 	margin: 5px;
@@ -136,133 +133,45 @@ body{
 	border: 3px solid #2b2b2b;
 }
 
-.create_task:hover{
+.create:hover{
 	transition: 0.4s;
 	background-color: #acacac;
 }
 
-.save_task{
-	margin: 10px;
-	padding: 5px;
-	border: 1px solid #2b2b2b;
-	border-radius: 5px;
-	background-color: #2b2b2b;
-	color: #fcfcfc;
-	width: 30%;
+.result
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.save_task:hover{
-	transition: 0.4s;
-	background-color: #acacac;
-	border: 1px solid #acacac;
+.list
+{
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-/*.rem_all{
-	margin: 1.5px;
-	padding: 5px;
-	border: 3px solid #2b2b2b;
-	border-radius: 5px;
-	background-color: #fcfcfc;
-	color: #2b2b2b;
-	width: 30%;
+.divik
+{
+  padding-top: 15px;
+  border-bottom: 1px solid #cacaca;
 }
 
-.rem_all:hover{
-	transition: 0.4s;
-	background-color: #828282;
-	border: 3px solid #828282;
-}
-
-.rea_all{
-	margin: 1.5px;
+.bts
+{
+	float: right;
+  margin: 1.5px;
 	padding: 5px;
 	border: 3px solid #2b2b2b;
 	border-radius: 5px;
 	background-color: #fcfcfc;
 	color: #2b2b2b;
-	width: 30%;
+	width: 10%;
+	height: 10%;
 }
 
-.rea_all:hover{
+.bts:hover{
 	transition: 0.4s;
 	background-color: #828282;
 	border: 3px solid #828282;
-}*/
-
-.todo__options{
-	margin: 6px;
-	padding: 5px;
-	border: 3px solid #2b2b2b;
-	border-radius: 5px;
-	background-color: #fcfcfc;
-	color: #2b2b2b;
-}
-
-.todo__items{
-	height: 100%;
-	width: 768px;
-	font-size: 14px;
-}
-
-.todo__item {
-	font-size: 14px;
-	margin: 10px;
-	padding: 5px;
-	border-bottom: 1px solid #cacaca;
-	list-style-type: none;
-}
-
-.todo__action_delete {
-	border: 3px solid #2b2b2b;
-	border-radius: 5px;
-	background-color: #fcfcfc;
-	color: #2b2b2b;
-	width: 30%;
-	height: 30px;
-}
-
-.todo__action_complete {
-	border: 3px solid #2b2b2b;
-	border-radius: 5px;
-	background-color: #fcfcfc;
-	color: #2b2b2b;
-	width: 30%;
-	height: 30px;
-}
-
-.todo__action_restore {
-	border: 3px solid #2b2b2b;
-	border-radius: 5px;
-	background-color: #fcfcfc;
-	color: #2b2b2b;
-	width: 30%;
-	height: 30px;
-}
-
-.todo__action_delete:hover {
-  transition: 0.4s;
-	background-color: #828282;
-	border: 3px solid #828282;
-}
-
-.todo__action_complete:hover {
-  transition: 0.4s;
-	background-color: #828282;
-	border: 3px solid #828282;
-}
-
-.todo__action_restore:hover {
-  transition: 0.4s;
-	background-color: #828282;
-	border: 3px solid #828282;
-}
-
-[data-todo-state="active"] .todo__action_restore,
-[data-todo-state="completed"] .todo__action_complete {
-  display: none;
-}
-
-[data-todo-option="active"] .todo__item:not([data-todo-state="active"]),
-[data-todo-option="completed"] .todo__item:not([data-todo-state="completed"]) {
-  display: none;
 }
