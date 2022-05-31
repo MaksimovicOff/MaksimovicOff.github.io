@@ -7,9 +7,9 @@ $('button.plus').on('click', function(){
       const var2 = document.createElement("div");
       var2.classList.add("bl");
       text.setAttribute("type", "text");
-      text.classList.add("stask_text");
+      text.classList.add("rrr");
       number.setAttribute("type", "number");
-      number.classList.add("stask_time");
+      number.classList.add("number");
       button.classList.add("stask_delete");
       button.setAttribute("onclick", "delet(event)")
       form.classList.add("control");
