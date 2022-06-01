@@ -46,7 +46,7 @@ const todo = {
       return `<span> - ${number}h</span><br>`;
     },
     create3() {
-      return `<button class="bts">Load</button>`;
+      return `<button class="bts" onclick="Delete(event)">Load</button>`;
     },
     init() {
       const fromStorage = localStorage.getItem('todo');
