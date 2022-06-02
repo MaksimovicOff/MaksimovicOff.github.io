@@ -37,16 +37,17 @@ const todo = {
       divik.insertAdjacentHTML('beforeend', this.create3());
     },
     create(text) {
-      return `<span class="todo__task"><b>${text}</b></span><br>`;
+      return `<span class="todo__task"><b class="t1">${text}</b></span>`;
     },
     create1(desc) {
-      return `<span>${desc}`;
+      return `<span class="t2">${desc}`;
     },
     create2(number) {
-      return `<span> - ${number}h</span><br>`;
+      return `<span> - <p class="t3">${number}</p>h</span><br>`;
     },
     create3() {
-      return `<button class="bts" onclick="Delete(event)">Load</button>`;
+      return `<button class="bts1" onclick="click1(event)">Load</button>
+      <button class="bts" onclick="Delete(event)">Delete</button>`;
     },
     init() {
       const fromStorage = localStorage.getItem('todo');
