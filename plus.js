@@ -6,6 +6,7 @@ $('button.plus').on('click', function(){
       const br = document.createElement("br");
       const var2 = document.createElement("div");
       var2.classList.add("bl");
+      var2.setAttribute('data-todo-state', 'active');
       text.setAttribute("type", "text");
       text.classList.add("rrr");
       number.setAttribute("type", "number");
