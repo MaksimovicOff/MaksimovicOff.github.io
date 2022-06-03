@@ -42,5 +42,15 @@
   	<script src="delet.js"></script>
   	<script src="delet1.js"></script>
   	<script src="load.js"></script>
+  	<script>
+        $('button.create').on('click', function() {
+            $('.rrr').each(function(index, element) {
+                console.log('Индекс элемента div:' + index + '; значение = ' + '<span class="text">' + $(element).val() + '</span>')
+            });
+            $('.number').each(function(index, element) {
+                console.log('Индекс элемента num:' + index + '; значение = ' + '<span class="num">' + $(element).val() + '</span>')
+            });
+        });
+    </script>
 </body>
 </html>
