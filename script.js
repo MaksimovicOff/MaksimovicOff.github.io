@@ -22,19 +22,36 @@ const todo = {
       }
     },
     add() {
-      const elemDesc = document.querySelector('.rrr');
       const divik = document.createElement('div');
-      divik.classList.add('divik');
-      const spic = document.createElement('li');
-      spic.insertAdjacentHTML('beforeend', this.create1(elemDesc.value));
-      const elemNumber = document.querySelector('.number');
-      spic.insertAdjacentHTML('beforeend', this.create2(elemNumber.value));
-      const elemText = document.querySelector('.name');
-      divik.insertAdjacentHTML('afterbegin', this.create(elemText.value));
-      elemText.value = '';
-      divik.appendChild(spic);
-      document.querySelector('.result').appendChild(divik);
-      divik.insertAdjacentHTML('beforeend', this.create3());
+        divik.classList.add('divik');
+        // while (document.querySelector('.bl[data-todo-state="active"]')) {
+        document.querySelector('.bl[data-todo-state="active"]').setAttribute('data-todo-state', 'completed');
+        const elemDesc = document.querySelector('.rrr');
+        const spic = document.createElement('li');
+        const scan = document.createElement('div');
+        scan.classList.add('scan');
+        scan.setAttribute('data', 'active')
+        spic.appendChild(scan);
+        const scan1 = document.createElement('div');
+        scan1.classList.add('scan1');
+        spic.appendChild(scan1);
+        $('.rrr').each(function(index, element) {
+            console.log('Индекс элемента div:' + index + '; значение = ' + $(element).val())
+            scan.insertAdjacentHTML('beforeend', '<span class ="text">' + $(element).val() + '</span><br>');
+            divik.appendChild(spic);
+        });
+        const elemNumber = document.querySelector('.number');
+        $('.number').each(function(index, element) {
+            console.log('Индекс элемента num:' + index + '; значение = ' + '<span class="num">' + $(element).val() + '</span><br>')
+            scan1.insertAdjacentHTML('beforeend', '<span class="num">' + $(element).val() + '</span>');
+        });
+        document.querySelector('.bl[data-todo-state="completed"]').style.display = 'none';
+        localStorage.setItem('todo', document.querySelector('.result').innerHTML);
+        const elemText = document.querySelector('.name');
+        divik.insertAdjacentHTML('afterbegin', this.create(elemText.value));
+        elemText.value = '';
+        document.querySelector('.result').appendChild(divik);
+        divik.insertAdjacentHTML('beforeend', this.create3());
     },
     create(text) {
       return `<span class="todo__task"><b class="t1">${text}</b></span>`;
