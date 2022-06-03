@@ -205,3 +205,34 @@ body{
 .t3 {
     display: inline-block;
 }
+
+.bl[data-todo-state="completed"] {
+    display: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.num {
+    display: block;
+}
+
+.num::before {
+    content: ' - ';
+}
+
+.num::after {
+    content: ' h';
+}
+
+.text {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.scan:last-child {
+    margin-bottom: 10px;
+}
