@@ -4,53 +4,133 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title>Task list</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="todo">
+<div class="base">
+	<div class="h_shadow">
 		<div class="header">
-			Task
-			<br>
-		</div>
-		<div class="control">
-			<input type="text" placeholder="Enter task name" class="name">
-		</div>
-		<div class="header">
-			Subtasks 
-			<button class="plus">+</button>
-		</div>
-		<div class="main">
-        <div class="label">
-      	<div class="form">
-        
-      	</div><br>
-    	<div class="control_buttons">
-    		<button class="save">SAVE TASK IN LOCALSTORAGE</button>
-    		<button type="button" class="create" onclick="add(event)">CREATE NEW TASK</button>
-    	</div>
-    	<div class="header">
-			Task list
-		</div>
-		<div class="result">
-    	</div>
-		</div>
+			<div class="h_top">
+				<div class="h_logo">DREAMSHARE</div>
+				<div class="h_buttons">
+					<a href=""class="h_log">Log In</a>
+					<a href=""class="h_sign">Sign up</a>
+				</div>
+			</div>
+		<div class="h_text"><div class="h_logo1">DREAMSHARE</div><div class="h_text_m">Share your<br> holiday dreams<div class="h_text1">And find the perfect partner <br class="h_m">to fullfill it</div></div>
+			<a href="" class="h_button">Find your holiday partner</a></div>
 		</div>
 	</div>
-	<script src="jquery-3.6.0.min.js"></script>
-	<script src="script.js"></script>
-	<script src="plus.js"></script>
-  	<script src="delet.js"></script>
-  	<script src="delet1.js"></script>
-  	<script src="load.js"></script>
-  	<script>
-        $('button.create').on('click', function() {
-            $('.rrr').each(function(index, element) {
-                console.log('Индекс элемента div:' + index + '; значение = ' + '<span class="text">' + $(element).val() + '</span>')
-            });
-            $('.number').each(function(index, element) {
-                console.log('Индекс элемента num:' + index + '; значение = ' + '<span class="num">' + $(element).val() + '</span>')
-            });
-        });
-    </script>
+	<div class="content">
+		<div class="block1">
+			<div class="title"><br><br>How Dreamshare works?</div>
+			<div class="steps">
+				<div class="step1">
+					<div class="s_button">STEP 1</div>
+					<div class="s_text1">Sed leo enim,<br>condimentum</div>
+					<div class="s_text2">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</div>
+				</div>
+				<div class="step2">
+					<div class="s_button">STEP 2</div>
+					<div class="s_text1">Morbi velit risus</div>
+					<div class="s_text2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</div>
+				</div>
+				<div class="step3">
+					<div class="s_button">STEP 3</div>
+					<div class="s_text1">Sed leo enim,<br>condimentum</div>
+					<div class="s_text2">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</div>
+				</div>
+			</div>
+		</div>
+		<div class="block2">
+			<div class="title"><br><br>Meet a partner for your best holiday</div>
+			<div class="partners">
+      			<div class="partner1">
+        			<div class="p1">
+          				<img src="img/p1.png">
+          				<div class="p_l1"></div>
+        			</div>
+        			<div class="p_t">Bradley Hunter</div>
+        			<div class="p_t1">Based in Chicago. I love playing tennis and loud music.</div>
+      			</div>
+      			<div class="partner2">
+        			<div class="p2">
+          				<img src="img/p2.png">
+          				<div class="p_l2"></div>
+        			</div>
+        			<div class="p_t">Heather Walker</div>
+        			<div class="p_t1">I'm a happy person that loves cats and climbing on mountains.</div>
+      			</div>
+      			<div class="partner3">
+        			<div class="p3">
+          				<img src="img/p3.png">
+          				<div class="p_l3"></div>
+        			</div>
+        			<div class="p_t">Lucas Marsha</div>
+        			<div class="p_t1">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</div>
+      			</div>
+      			<div class="partner4">
+        			<div class="p4">
+          				<img src="img/p4.png">
+          				<div class="p_l4"></div>
+        			</div>
+        			<div class="p_t">Bradley Hunter</div>
+        			<div class="p_t1">Based in Chicago. I love playing tennis and loud music.</div>
+      			</div>
+      		</div>
+      		<div class="b2_button">
+      			<a href="" class="b2_button1">See other partners</a>
+    		</div>
+      	</div>
+  		<div class="block3">
+  			<div class="title"><br><br>Discover holiday activity ideas</div>
+  			<div class="d">
+      		<div class="ideas_1">
+        		<div class="col_n1 col_n1_b"><div class="col_n1_b_t">Sport and Activity</div></div>
+        		<div class="col_n2 col_n1_b"><div class="col_n1_b_t">Wellnes and Health</div></div>
+        		<div class="col_n3 col_n1_b"><div class="col_n1_b_t">Extreme Sports and Expeditions</div></div>
+      		</div>
+      		<div class="ideas_2">
+      		  	<div class="col_1 col_1_b">Games</div>
+      		  	<div class="col_2 col_1_b">Culture and Education</div>
+      		</div>
+      		<div class="ideas_3">
+        		<div class="row_3 row_3_b1">Relaxation</div>
+        		<div class="row_3 row_3_b2">Travelling</div>
+      		</div>
+			</div>
+		<div class="block4">
+			<div class="title"><br><br>Discover holiday activity ideas</div>
+			<div class="b4_subtitle">Hi! What are your holiday interests?</div>
+			<form class="b4_form">
+      			<input type="text" placeholder="Enter your interests" class="b4_text">
+      			<input type="submit" value="Search partners" class="b4_button">
+    		</form>
+		</div>
+	</div>
+	</div>
+	<div class="f_line">
+	<div class="footer">
+		<div class="f_base">
+			<div class="f_logo">DREAMSHARE</div>
+			<div>
+				<div class="f_text">Company</div>
+				<div class="f_subtext">About</div>
+				<div class="f_subtext">Contacts</div>
+				<div class="f_subtext">Press</div>
+				<div class="f_subtext">Blog</div>
+			</div>
+			<div class="f_text">Partners</div>
+		</div>
+		<div class="f_logo1">
+      		<p class="f_logo1_text">Designed by</p>
+      		<img src="img/logo.png">
+    	</div>
+	</div>
+	</div>
+</div>
 </body>
 </html>
