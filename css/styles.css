@@ -697,6 +697,10 @@ a{
     min-width: 48%;
 }
 
+.p_l1, .p_l2, .p_l3, .p_l4{
+	left: -11%;
+}
+
 .block3{
 	width: 100%;
     margin: 0;
@@ -766,6 +770,10 @@ a{
 .h_top{
 	display: flex;
     justify-content: center;
+}
+
+.h_sign{
+	margin-right: 0px;
 }
 
 .h_buttons{
@@ -902,6 +910,10 @@ a{
 
 .p_t1{
 	font-size: 22px;
+}
+
+.p_l1, .p_l2, .p_l3, .p_l4{
+	left: -20%;
 }
 
 .b2_button1{
