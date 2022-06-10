@@ -540,7 +540,6 @@ a{
 .f_line{
 	border-top: 4px solid #ff4e50;
   	width: 100%;
-  	background: ;
   	margin-bottom: 10px;
   	display: flex;
 	justify-content: center;
@@ -750,9 +749,6 @@ a{
 }
 }
 
-
-
-
 @media screen and (max-width: 480px) {
 .h_shadow{
 	width: 100%;
@@ -767,11 +763,13 @@ a{
 	display: none;
 }
 
+.h_top{
+	display: flex;
+    justify-content: center;
+}
+
 .h_buttons{
-	text-align: center;
-    padding-top: 40px;
-    display: block;
-    float: none;
+	display: flex;
 }
 
 .h_text{
@@ -799,11 +797,17 @@ a{
 }
 
 .h_button{
-	width: 100%;
+	width: 90%;
 }
 
 .h_m{
     display: block;
+}
+
+.h_buttont{
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content{
@@ -820,6 +824,10 @@ a{
 
 .title{
 	font-size: 18px;
+}
+
+.block1{
+	padding-bottom: 20px;
 }
 
 .step1{
@@ -849,12 +857,19 @@ a{
     height: none;
 }
 
+.block2{
+	padding-bottom: 20px;
+}
+
 .partners{
-	max-width: 300px;
 	display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+}
+
+.p1, .p2, .p3, .p4{
+	width: 200px;
 }
 
 .partner1{
@@ -879,5 +894,175 @@ a{
 	width: 100%;
 	margin-right: 0px;
     margin-left: 0px;
+}
+
+.p_t{
+	font-size: 22px;
+}
+
+.p_t1{
+	font-size: 22px;
+}
+
+.b2_button1{
+	padding: 10px 100px;
+    font-size: 14px;
+}
+
+.block3{
+	padding-bottom: 20px;
+}
+
+.ideas_1{
+	display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.col_n1_b{
+	min-width: 300px;
+    max-height: 120px;
+    min-height: 120px;
+    max-width: 300px;
+}
+
+.col_n1{
+	margin-bottom: 20px;
+	background-position: 10% 20%;
+}
+
+.col_n2{
+	margin-bottom: 20px;
+	background-position: 10% 50%;
+}
+
+.col_n3{
+	background-position: 10% 10%;
+}
+
+.ideas_2{
+	display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.col_1_b{
+	min-width: 300px;
+    max-height: 120px;
+    min-height: 120px;
+    max-width: 300px;
+}
+
+.col_1{
+	margin: 0;
+    margin-bottom: 20px;
+    background-position: 50% 60%;
+}
+
+.col_2{
+	background-position: 50% 70%;
+}
+
+.ideas_3{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row_3{
+	min-width: 300px;
+    max-height: 120px;
+    min-height: 120px;
+    max-width: 300px;
+}
+
+.row_3_b1{
+	margin-bottom: 20px;
+	background-position: 70% 20%;
+}
+
+.row_3_b2{
+	margin: 0px;
+    background-position: 10% 30%;
+}
+
+.block4{
+	padding-bottom: 50px;
+}
+
+.b4_subtitle{
+	margin-bottom: 40px;
+}
+
+.b4_text{
+	margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.b4_button{
+    width: 100%;
+}
+
+.b4_form{
+	width: 90%;
+}
+
+.footer{
+	width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.f_base{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.f_logo{
+	display: block;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.f_block{
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.f_comp{
+	display: flex;
+}
+
+.f_subtext{
+	text-align: center;
+	margin-right: 20px;
+}
+
+.f_subtext1{
+	margin-right: 20px;
+}
+
+.f_logo1{
+	display: block;
+    text-align: center;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 }
